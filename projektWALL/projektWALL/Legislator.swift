@@ -15,35 +15,35 @@ struct Legislator {
     // MARK: - Properties
     
     // Names
-    var firstName: String
+    var firstName: String!
     var nickname: String?
-    var lastName: String
+    var lastName: String!
     var middleName: String?
     var nameSuffix: String?
     
-    var inOffice: Bool
-    var party: Party
-    var gender: String
-    var state: String
-    var stateName: String
+    var inOffice: Bool!
+    var party: Party!
+    var gender: String!
+    var state: String!
+    var stateName: String!
     var district: Int?
-    var title: Title
-    var chamber: Chamber
+    var title: Title!
+    var chamber: Chamber!
     var senateClass: Int?
     var stateRank: String?
-    var birthday: Date
-    var termEnd: Date
-    var termStart: Date
+    var birthday: Date!
+    var termEnd: Date!
+    var termStart: Date!
     
     // Other Info
     var leadershipRole: String?
     
     // Contact Info
     var ocEmail: String?
-    var phone: Int
+    var phone: Int!
     var website: URL?
-    var office: String
-    var contactForm: URL
+    var office: String!
+    var contactForm: URL!
     var fax: Int?
     
 //    var fec_ids: [String]
@@ -53,6 +53,10 @@ struct Legislator {
 //    var ocd_id: String
 //    var thomas_id: String
     
+    init(firstName: String, gender: String) {
+        self.firstName = firstName
+        self.gender = gender
+    }
     
     // MARK: - Supporting Functionality
     
