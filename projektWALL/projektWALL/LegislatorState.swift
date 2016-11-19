@@ -1,5 +1,5 @@
 //
-//  RootState.swift
+//  LegislatorState.swift
 //  projektWALL
 //
 //  Created by Amir Saifi on 11/19/16.
@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import ReSwift
+import Alamofire
 
-struct RootState {
+struct LegislatorState: StateType {
     var teamMembers: [String]!
     var currentDate: Date?
-    var legislators: [Legislator]!
+    var legislators: Result<[Legislator]>?
 }

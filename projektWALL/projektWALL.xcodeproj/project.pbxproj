@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A3A8DB21DE0F756005A8F5F /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DB11DE0F756005A8F5F /* RootState.swift */; };
 		2A3A8DB41DE0F841005A8F5F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DB31DE0F841005A8F5F /* APIError.swift */; };
+		2A3A8DB61DE0FF1B005A8F5F /* RootStateActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DB51DE0FF1B005A8F5F /* RootStateActions.swift */; };
+		2A3A8DBC1DE104B3005A8F5F /* LegislatorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DBB1DE104B3005A8F5F /* LegislatorState.swift */; };
+		2A3A8DBE1DE105F4005A8F5F /* LegislatorStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DBD1DE105F4005A8F5F /* LegislatorStateReducer.swift */; };
 		95EA009A22EA471A4197E0CF /* Pods_projektWALL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */; };
 		CBF47B021DE0E63700AFA53D /* Legislator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF47B011DE0E63700AFA53D /* Legislator.swift */; };
 		DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA103B691DE059C400CDFDB8 /* APIRouter.swift */; };
@@ -20,8 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A3A8DB11DE0F756005A8F5F /* RootState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		2A3A8DB31DE0F841005A8F5F /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		2A3A8DB51DE0FF1B005A8F5F /* RootStateActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootStateActions.swift; sourceTree = "<group>"; };
+		2A3A8DBB1DE104B3005A8F5F /* LegislatorState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegislatorState.swift; sourceTree = "<group>"; };
+		2A3A8DBD1DE105F4005A8F5F /* LegislatorStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegislatorStateReducer.swift; sourceTree = "<group>"; };
 		4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projektWALL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projektWALL.release.xcconfig"; path = "Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL.release.xcconfig"; sourceTree = "<group>"; };
 		CBF47B011DE0E63700AFA53D /* Legislator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legislator.swift; sourceTree = "<group>"; };
@@ -51,7 +55,7 @@
 		2A3A8DAD1DE0F28B005A8F5F /* State */ = {
 			isa = PBXGroup;
 			children = (
-				2A3A8DB11DE0F756005A8F5F /* RootState.swift */,
+				2A3A8DBB1DE104B3005A8F5F /* LegislatorState.swift */,
 			);
 			name = State;
 			sourceTree = "<group>";
@@ -59,6 +63,7 @@
 		2A3A8DAE1DE0F298005A8F5F /* Action */ = {
 			isa = PBXGroup;
 			children = (
+				2A3A8DB51DE0FF1B005A8F5F /* RootStateActions.swift */,
 			);
 			name = Action;
 			sourceTree = "<group>";
@@ -66,6 +71,7 @@
 		2A3A8DAF1DE0F2CA005A8F5F /* Reducer */ = {
 			isa = PBXGroup;
 			children = (
+				2A3A8DBD1DE105F4005A8F5F /* LegislatorStateReducer.swift */,
 			);
 			name = Reducer;
 			sourceTree = "<group>";
@@ -272,7 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A3A8DB21DE0F756005A8F5F /* RootState.swift in Sources */,
+				2A3A8DB61DE0FF1B005A8F5F /* RootStateActions.swift in Sources */,
+				2A3A8DBE1DE105F4005A8F5F /* LegislatorStateReducer.swift in Sources */,
+				2A3A8DBC1DE104B3005A8F5F /* LegislatorState.swift in Sources */,
 				DA8A03881DE05640000F392C /* ViewController.swift in Sources */,
 				CBF47B021DE0E63700AFA53D /* Legislator.swift in Sources */,
 				DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */,

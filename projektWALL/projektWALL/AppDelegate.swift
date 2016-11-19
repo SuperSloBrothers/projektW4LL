@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import ReSwift
+
+let store = Store<LegislatorState>(reducer: LegislatorStateReducer(), state: nil)
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
