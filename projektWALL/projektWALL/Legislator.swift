@@ -9,52 +9,58 @@
 import Foundation
 
 
+/// For descriptions of its properties go to https://sunlightlabs.github.io/congress/legislators.html
 struct Legislator {
     
     // MARK: - Properties
     
-    // Basic Info
-    var title: Title
+    // Names
     var firstName: String
-    var middleName: String?
-    var lastName: String
-    var nameSuffix: String?
     var nickname: String?
-    var gender: String
-    var birthday: Date
+    var lastName: String
+    var middleName: String?
+    var nameSuffix: String?
     
-    // Other Info
-    var leadershipRole: String?
+    var inOffice: Bool
+    var party: Party
+    var gender: String
     var state: String
     var stateName: String
-    var district: Int
+    var district: Int?
+    var title: Title
     var chamber: Chamber
-    var party: Party
-    var office: String
-    var inOffice: Bool
+    var senateClass: Int?
+    var stateRank: String?
+    var birthday: Date
     var termEnd: Date
     var termStart: Date
     
+    // Other Info
+    var leadershipRole: String?
+    
     // Contact Info
-    var contactForm: URL
-    var fax: Int?
     var ocEmail: String?
     var phone: Int
     var website: URL?
+    var office: String
+    var contactForm: URL
+    var fax: Int?
     
 //    var fec_ids: [String]
 //    var govtrack_id: Int
-//    var bioguide_id: String
+//    var bioguide_id: String 
 //    var crp_id: String
 //    var ocd_id: String
 //    var thomas_id: String
     
     
     // MARK: - Supporting Functionality
-
+    
     enum Title: String {
         case rep = "Rep"
         case sen = "Sen"
+        case del = "Del"
+        case com = "Com"
     }
     
     enum Chamber: String {
@@ -63,8 +69,9 @@ struct Legislator {
     }
     
     enum Party: String {
-        case democrat
-        case republican
+        case democrat = "D"
+        case republican = "R"
+        case independent = "I"
     }
 
 }
