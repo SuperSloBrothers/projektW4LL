@@ -11,4 +11,5 @@ import Foundation
 struct RootState {
     var teamMembers: [String]!
     var currentDate: Date?
+    var legislators: [Legislator]!
 }

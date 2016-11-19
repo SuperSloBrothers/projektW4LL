@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A3A8DB21DE0F756005A8F5F /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DB11DE0F756005A8F5F /* RootState.swift */; };
+		2A3A8DB41DE0F841005A8F5F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DB31DE0F841005A8F5F /* APIError.swift */; };
 		95EA009A22EA471A4197E0CF /* Pods_projektWALL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */; };
 		CBF47B021DE0E63700AFA53D /* Legislator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF47B011DE0E63700AFA53D /* Legislator.swift */; };
 		DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA103B691DE059C400CDFDB8 /* APIRouter.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		2A3A8DB11DE0F756005A8F5F /* RootState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
+		2A3A8DB31DE0F841005A8F5F /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projektWALL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projektWALL.release.xcconfig"; path = "Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL.release.xcconfig"; sourceTree = "<group>"; };
 		CBF47B011DE0E63700AFA53D /* Legislator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legislator.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		CBF47B031DE0E64100AFA53D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2A3A8DB31DE0F841005A8F5F /* APIError.swift */,
 				CBF47B011DE0E63700AFA53D /* Legislator.swift */,
 			);
 			name = Models;
@@ -175,7 +178,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = slobros;
 				TargetAttributes = {
 					DA8A03811DE05640000F392C = {
@@ -274,6 +277,7 @@
 				CBF47B021DE0E63700AFA53D /* Legislator.swift in Sources */,
 				DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */,
 				DA8A03861DE05640000F392C /* AppDelegate.swift in Sources */,
+				2A3A8DB41DE0F841005A8F5F /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +321,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -367,6 +372,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -396,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F2D668A7ADDDC1D3A851D993 /* Pods-projektWALL.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BEJYL7ZK82;
 				INFOPLIST_FILE = projektWALL/Info.plist;
@@ -411,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BEJYL7ZK82;
 				INFOPLIST_FILE = projektWALL/Info.plist;
