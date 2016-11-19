@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95EA009A22EA471A4197E0CF /* Pods_projektWALL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */; };
 		DA8A03861DE05640000F392C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A03851DE05640000F392C /* AppDelegate.swift */; };
 		DA8A03881DE05640000F392C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A03871DE05640000F392C /* ViewController.swift */; };
 		DA8A038B1DE05640000F392C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8A03891DE05640000F392C /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projektWALL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projektWALL.release.xcconfig"; path = "Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL.release.xcconfig"; sourceTree = "<group>"; };
 		DA8A03821DE05640000F392C /* projektWALL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projektWALL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8A03851DE05640000F392C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8A03871DE05640000F392C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		DA8A038C1DE05640000F392C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8A038F1DE05640000F392C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8A03911DE05640000F392C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D668A7ADDDC1D3A851D993 /* Pods-projektWALL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projektWALL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EA009A22EA471A4197E0CF /* Pods_projektWALL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5AD1AC6C00FB30E9A571AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB057EF81DE0572800B28A8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA8A03851DE05640000F392C /* AppDelegate.swift */,
+				DA8A038C1DE05640000F392C /* Assets.xcassets */,
+				DA8A038E1DE05640000F392C /* LaunchScreen.storyboard */,
+				DA8A03911DE05640000F392C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		DA8A03791DE05640000F392C = {
 			isa = PBXGroup;
 			children = (
 				DA8A03841DE05640000F392C /* projektWALL */,
 				DA8A03831DE05640000F392C /* Products */,
+				DF8962A26BDB6CD512F16AC9 /* Pods */,
+				C5AD1AC6C00FB30E9A571AF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,20 @@
 		DA8A03841DE05640000F392C /* projektWALL */ = {
 			isa = PBXGroup;
 			children = (
-				DA8A03851DE05640000F392C /* AppDelegate.swift */,
-				DA8A03871DE05640000F392C /* ViewController.swift */,
 				DA8A03891DE05640000F392C /* Main.storyboard */,
-				DA8A038C1DE05640000F392C /* Assets.xcassets */,
-				DA8A038E1DE05640000F392C /* LaunchScreen.storyboard */,
-				DA8A03911DE05640000F392C /* Info.plist */,
+				DA8A03871DE05640000F392C /* ViewController.swift */,
+				CB057EF81DE0572800B28A8C /* Supporting Files */,
 			);
 			path = projektWALL;
+			sourceTree = "<group>";
+		};
+		DF8962A26BDB6CD512F16AC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2D668A7ADDDC1D3A851D993 /* Pods-projektWALL.debug.xcconfig */,
+				AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA8A03941DE05640000F392C /* Build configuration list for PBXNativeTarget "projektWALL" */;
 			buildPhases = (
+				48146774A2E18D10E296741E /* [CP] Check Pods Manifest.lock */,
 				DA8A037E1DE05640000F392C /* Sources */,
 				DA8A037F1DE05640000F392C /* Frameworks */,
 				DA8A03801DE05640000F392C /* Resources */,
+				DFE0D94DFDDCCE5BC2FFEA36 /* [CP] Embed Pods Frameworks */,
+				63621E4C322446A35B14C129 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +166,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48146774A2E18D10E296741E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63621E4C322446A35B14C129 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFE0D94DFDDCCE5BC2FFEA36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA8A037E1DE05640000F392C /* Sources */ = {
@@ -259,6 +342,7 @@
 		};
 		DA8A03951DE05640000F392C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2D668A7ADDDC1D3A851D993 /* Pods-projektWALL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BEJYL7ZK82;
@@ -272,6 +356,7 @@
 		};
 		DA8A03961DE05640000F392C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BEJYL7ZK82;
@@ -302,6 +387,7 @@
 				DA8A03961DE05640000F392C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
