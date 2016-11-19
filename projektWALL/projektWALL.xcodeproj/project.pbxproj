@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3A8DB21DE0F756005A8F5F /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DB11DE0F756005A8F5F /* RootState.swift */; };
 		95EA009A22EA471A4197E0CF /* Pods_projektWALL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */; };
 		CBF47B021DE0E63700AFA53D /* Legislator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF47B011DE0E63700AFA53D /* Legislator.swift */; };
 		DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA103B691DE059C400CDFDB8 /* APIRouter.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3A8DB11DE0F756005A8F5F /* RootState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projektWALL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projektWALL.release.xcconfig"; path = "Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL.release.xcconfig"; sourceTree = "<group>"; };
 		CBF47B011DE0E63700AFA53D /* Legislator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legislator.swift; sourceTree = "<group>"; };
@@ -44,6 +46,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A3A8DAD1DE0F28B005A8F5F /* State */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A8DB11DE0F756005A8F5F /* RootState.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		2A3A8DAE1DE0F298005A8F5F /* Action */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Action;
+			sourceTree = "<group>";
+		};
+		2A3A8DAF1DE0F2CA005A8F5F /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Reducer;
+			sourceTree = "<group>";
+		};
+		2A3A8DB01DE0F2DA005A8F5F /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		C5AD1AC6C00FB30E9A571AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +123,10 @@
 		DA8A03841DE05640000F392C /* projektWALL */ = {
 			isa = PBXGroup;
 			children = (
+				2A3A8DB01DE0F2DA005A8F5F /* API */,
+				2A3A8DAD1DE0F28B005A8F5F /* State */,
+				2A3A8DAF1DE0F2CA005A8F5F /* Reducer */,
+				2A3A8DAE1DE0F298005A8F5F /* Action */,
 				DA8A03891DE05640000F392C /* Main.storyboard */,
 				DA103B691DE059C400CDFDB8 /* APIRouter.swift */,
 				CBF47B031DE0E64100AFA53D /* Models */,
@@ -194,7 +229,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		63621E4C322446A35B14C129 /* [CP] Copy Pods Resources */ = {
@@ -234,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3A8DB21DE0F756005A8F5F /* RootState.swift in Sources */,
 				DA8A03881DE05640000F392C /* ViewController.swift in Sources */,
 				CBF47B021DE0E63700AFA53D /* Legislator.swift in Sources */,
 				DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */,

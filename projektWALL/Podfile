@@ -5,4 +5,7 @@ use_frameworks!
 target 'projektWALL' do
   # Pods for projektWALL
   pod 'Alamofire', '~> 4.0'
+  pod 'ObjectMapper', '~> 2.2'
+  pod 'ReSwift'
+  pod 'Dwifft', '~> 0.5'
 end
