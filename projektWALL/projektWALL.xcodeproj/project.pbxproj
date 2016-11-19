@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		95EA009A22EA471A4197E0CF /* Pods_projektWALL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */; };
+		CBF47B021DE0E63700AFA53D /* Legislator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF47B011DE0E63700AFA53D /* Legislator.swift */; };
 		DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA103B691DE059C400CDFDB8 /* APIRouter.swift */; };
 		DA8A03861DE05640000F392C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A03851DE05640000F392C /* AppDelegate.swift */; };
 		DA8A03881DE05640000F392C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A03871DE05640000F392C /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projektWALL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projektWALL.release.xcconfig"; path = "Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL.release.xcconfig"; sourceTree = "<group>"; };
+		CBF47B011DE0E63700AFA53D /* Legislator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legislator.swift; sourceTree = "<group>"; };
 		DA103B691DE059C400CDFDB8 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		DA8A03821DE05640000F392C /* projektWALL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projektWALL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8A03851DE05640000F392C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CBF47B031DE0E64100AFA53D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBF47B011DE0E63700AFA53D /* Legislator.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		DA8A03791DE05640000F392C = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 			children = (
 				DA8A03891DE05640000F392C /* Main.storyboard */,
 				DA103B691DE059C400CDFDB8 /* APIRouter.swift */,
+				CBF47B031DE0E64100AFA53D /* Models */,
 				DA8A03871DE05640000F392C /* ViewController.swift */,
 				CB057EF81DE0572800B28A8C /* Supporting Files */,
 			);
@@ -224,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8A03881DE05640000F392C /* ViewController.swift in Sources */,
+				CBF47B021DE0E63700AFA53D /* Legislator.swift in Sources */,
 				DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */,
 				DA8A03861DE05640000F392C /* AppDelegate.swift in Sources */,
 			);
