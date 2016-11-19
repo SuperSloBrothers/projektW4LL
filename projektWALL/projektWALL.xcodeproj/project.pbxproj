@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		95EA009A22EA471A4197E0CF /* Pods_projektWALL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */; };
+		DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA103B691DE059C400CDFDB8 /* APIRouter.swift */; };
 		DA8A03861DE05640000F392C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A03851DE05640000F392C /* AppDelegate.swift */; };
 		DA8A03881DE05640000F392C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A03871DE05640000F392C /* ViewController.swift */; };
 		DA8A038B1DE05640000F392C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8A03891DE05640000F392C /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projektWALL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projektWALL.release.xcconfig"; path = "Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL.release.xcconfig"; sourceTree = "<group>"; };
+		DA103B691DE059C400CDFDB8 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		DA8A03821DE05640000F392C /* projektWALL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projektWALL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8A03851DE05640000F392C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8A03871DE05640000F392C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				DA8A03891DE05640000F392C /* Main.storyboard */,
+				DA103B691DE059C400CDFDB8 /* APIRouter.swift */,
 				DA8A03871DE05640000F392C /* ViewController.swift */,
 				CB057EF81DE0572800B28A8C /* Supporting Files */,
 			);
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8A03881DE05640000F392C /* ViewController.swift in Sources */,
+				DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */,
 				DA8A03861DE05640000F392C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
