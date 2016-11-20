@@ -18,20 +18,25 @@ struct SetLegislators: Action {
 func getLegislators() -> Store<LegislatorState>.ActionCreator {
     return { state, store in
         
-        let amir = Legislator(firstName: "Amir", gender: "M")
-        let gabe = Legislator(firstName: "Gabe", gender: "Other")
-        let paul = Legislator(firstName: "Paulinos", gender: "yes")
+        let request = Alamofire.request("https://congress.api.sunlightfoundation.com/legislators").responseJSON { response in
+            guard let JSON = response.result.value else {
+                let apiError = APIError(status: response.response?.statusCode ?? 400, type: "invalid", message: response.result.error?.localizedDescription ?? "could not load legislators")
+                store.dispatch(SetLegislators(legislators: Result.failure(apiError)))
+                return
+            }
+            guard response.response?.statusCode == 200 else {
+                let apiError = Mapper<APIError>().map(JSONObject: JSON)
+                store.dispatch(SetLegislators(legislators: Result.failure(apiError!)))
+                return
+            }
+            if let legislators = Mapper<APIResult>().map(JSONObject: JSON) {
+                store.dispatch(SetLegislators(legislators: Result.success(legislators.results)))
+            }
         
-        let arrayData = [amir, gabe, paul]
+        }
+        print(debugPrint(request))
         
-        let resultie = Result.success(arrayData)
-        //
-        //  AlamoFire Request w/ Completion Block
-        // begin completion block
-        //      store.dispatch(SetLegislators(Result(.success(value))
-        //      store.dispatch(SetLegislators(Result(.failure(errorValue))
-        // end completion block
-        return SetLegislators(legislators: resultie)
+        return SetLegislators(legislators: nil)
     }
     
 }

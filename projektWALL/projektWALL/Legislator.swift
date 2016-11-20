@@ -7,14 +7,17 @@
 //
 
 import Foundation
+import ObjectMapper
 
 
 /// For descriptions of its properties go to https://sunlightlabs.github.io/congress/legislators.html
-struct Legislator {
+struct Legislator: Mappable {
     
     // MARK: - Properties
     
     // Names
+    var bioguide_id: String!
+
     var firstName: String!
     var nickname: String?
     var lastName: String!
@@ -76,6 +79,15 @@ struct Legislator {
         case democrat = "D"
         case republican = "R"
         case independent = "I"
+    }
+    
+    init?(map: Map) {}
+    
+    mutating func mapping(map: Map) {
+        firstName   <- map["first_name"]
+        lastName    <- map["last_name"]
+        nickname    <- map["nickname"]
+        state       <- map["state"]
     }
 
 }

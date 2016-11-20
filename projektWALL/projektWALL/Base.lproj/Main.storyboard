@@ -1,12 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l0f-fU-bk6">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Paul-->
+        <scene sceneID="Ana-ZX-Bc8">
+            <objects>
+                <viewController id="lSt-pt-6an" customClass="PaulViewController" customModule="projektWALL" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sIL-8E-wab"/>
+                        <viewControllerLayoutGuide type="bottom" id="tCS-C9-4NL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hux-dx-d4j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Paul" id="czg-tL-vBr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Mr-N5-ZlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1234" y="646"/>
+        </scene>
+        <!--Gabe-->
+        <scene sceneID="Uhv-fZ-WuX">
+            <objects>
+                <viewController id="MVI-gL-bP0" customClass="GabeViewController" customModule="projektWALL" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D91-1Q-jH4"/>
+                        <viewControllerLayoutGuide type="bottom" id="oac-GU-ueo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2gJ-cf-Xc0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gabe" id="dFM-cH-Dij"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYT-Z2-otw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-218" y="544"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="coI-g1-s1S">
+            <objects>
+                <tabBarController id="l0f-fU-bk6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="fill" id="ica-nn-575">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="22D-bU-cZW"/>
+                        <segue destination="MVI-gL-bP0" kind="relationship" relationship="viewControllers" id="MYv-uy-iNc"/>
+                        <segue destination="lSt-pt-6an" kind="relationship" relationship="viewControllers" id="JvU-1a-Cxg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzV-z6-MC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1522" y="-169"/>
+        </scene>
+        <!--Amir-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="projektWALL" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,9 +77,6 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dKl-sv-Hqh">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="526" id="gY7-16-dE4"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="legislatorCell" id="iJF-NS-d6j" customClass="legislatorTableViewCell" customModule="projektWALL" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -31,21 +85,30 @@
                                             <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b48-Yl-29i">
-                                                    <frame key="frameInset" minX="8" minY="14" width="214" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b48-Yl-29i">
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Oh4-2Z-l9T">
-                                                    <frame key="frameInset" minX="316" minY="14" width="51" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Oh4-2Z-l9T">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="66" id="XhL-0R-jMg"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="b48-Yl-29i" firstAttribute="top" secondItem="yB9-Qx-2vt" secondAttribute="topMargin" constant="6" id="AXJ-tH-csH"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="b48-Yl-29i" secondAttribute="bottom" constant="1" id="OqE-PK-xny"/>
+                                                <constraint firstItem="Oh4-2Z-l9T" firstAttribute="top" secondItem="yB9-Qx-2vt" secondAttribute="topMargin" constant="6" id="PIj-lL-FZA"/>
+                                                <constraint firstItem="Oh4-2Z-l9T" firstAttribute="leading" secondItem="b48-Yl-29i" secondAttribute="trailing" constant="70" id="kzV-Qu-Y6J"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Oh4-2Z-l9T" secondAttribute="bottom" constant="1" id="lI3-U6-nxQ"/>
+                                                <constraint firstItem="Oh4-2Z-l9T" firstAttribute="leading" secondItem="b48-Yl-29i" secondAttribute="trailing" constant="70" id="oHF-Fs-sZS"/>
+                                                <constraint firstItem="Oh4-2Z-l9T" firstAttribute="trailing" secondItem="yB9-Qx-2vt" secondAttribute="trailingMargin" id="xve-tw-m7G"/>
+                                                <constraint firstItem="b48-Yl-29i" firstAttribute="leading" secondItem="yB9-Qx-2vt" secondAttribute="leadingMargin" id="yOG-W4-Zif"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameLabel" destination="b48-Yl-29i" id="1dK-K6-fLy"/>
@@ -80,13 +143,14 @@
                             <constraint firstItem="dKl-sv-Hqh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vml-UY-vmP"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Amir" id="NVH-wP-TSc"/>
                     <connections>
                         <outlet property="legislatorTableView" destination="dKl-sv-Hqh" id="NLr-YN-eiC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-2367" y="523"/>
         </scene>
     </scenes>
 </document>

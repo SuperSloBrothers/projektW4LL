@@ -80,8 +80,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "legislatorCell", for: indexPath) as! legislatorTableViewCell
         let nextLegislator = legislatorsDataSource[indexPath.row]
-        cell.nameLabel.text = nextLegislator.firstName
-        cell.partyLabel.text = nextLegislator.gender
+        cell.nameLabel.text = nextLegislator.firstName + " " + nextLegislator.lastName
+        cell.partyLabel.text = nextLegislator.state
         
         return cell
     }
