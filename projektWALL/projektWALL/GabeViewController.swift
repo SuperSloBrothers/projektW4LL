@@ -12,11 +12,11 @@ import Alamofire
 
 class GabeViewController: UIViewController, StoreSubscriber {
     
-    // MARK: IVARs
+    // MARK: - IVARs
     
-    // MARK: IBOutlets
+    // MARK: - IBOutlets
     
-    // MARK: State Handling
+    // MARK: - State Handling
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +34,7 @@ class GabeViewController: UIViewController, StoreSubscriber {
     }
     
     
-    func newState(state: LegislatorState) {
-        
+    func newState(state: RootState) {
         
     }
     
@@ -44,12 +43,12 @@ class GabeViewController: UIViewController, StoreSubscriber {
         // Dispose of any resources that can be recreated.
     }
     
-    // MARK: Helper Methods
+    // MARK: - Helper Methods
     
     
-    // MARK: IBActions
+    // MARK: - IBActions
     
-    // MARK: Table View Delegate Protocol
+    // MARK: - Table View Delegate Protocol
     /*
     // MARK: - Navigation
 

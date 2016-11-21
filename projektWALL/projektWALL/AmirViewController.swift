@@ -34,7 +34,7 @@ class AmirViewController: UIViewController, StoreSubscriber {
     }
     
     
-    func newState(state: LegislatorState) {
+    func newState(state: RootState) {
         
         
     }

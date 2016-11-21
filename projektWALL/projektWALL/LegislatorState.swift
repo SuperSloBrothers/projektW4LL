@@ -11,7 +11,5 @@ import ReSwift
 import Alamofire
 
 struct LegislatorState: StateType {
-    var teamMembers: [String]!
-    var currentDate: Date?
     var legislators: Result<[Legislator]>?
 }

@@ -10,18 +10,20 @@ import Foundation
 import ReSwift
 import Alamofire
 
-struct LegislatorStateReducer: Reducer {
+
+func legislatorStateReducer(action: Action, state: LegislatorState?) -> LegislatorState {
+    var state = state ?? initialState()
     
-    func handleAction(action: Action, state: LegislatorState?) -> LegislatorState {
-        var state = state ?? LegislatorState()
-        
-        switch action {
-        case let action as SetLegislators:
-            state.legislators = action.legislators
-        default:
-            break
-        }
-        
-        return state
+    switch action {
+    case let action as SetLegislators:
+        state.legislators = action.legislators
+    default:
+        break
     }
+    
+    return state
+}
+
+func initialState() -> LegislatorState {
+    return LegislatorState(legislators: nil)
 }

@@ -44,9 +44,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
 
-    func newState(state: LegislatorState) {
+    func newState(state: RootState) {
         
-        if let allLegislators = store.state.legislators {
+        if let allLegislators = store.state.legislatorState.legislators {
             switch allLegislators {
             case .success(let legislators):
                 legislatorsDataSource = legislators

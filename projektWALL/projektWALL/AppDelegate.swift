@@ -9,7 +9,7 @@
 import UIKit
 import ReSwift
 
-let store = Store<LegislatorState>(reducer: LegislatorStateReducer(), state: nil)
+let store = Store<RootState>(reducer: RootStateReducer(), state: nil)
 
 
 @UIApplicationMain
