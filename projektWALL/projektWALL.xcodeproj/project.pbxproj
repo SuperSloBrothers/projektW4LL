@@ -21,6 +21,7 @@
 		CB77BD561DE4CD1700FF132E /* UpcomingBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD551DE4CD1700FF132E /* UpcomingBill.swift */; };
 		CB77BD581DE4D2ED00FF132E /* APIUpcomingBillResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD571DE4D2ED00FF132E /* APIUpcomingBillResult.swift */; };
 		CB77BD5A1DE4D4D900FF132E /* UpcomingBillsStateActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD591DE4D4D900FF132E /* UpcomingBillsStateActions.swift */; };
+		CB77BD5C1DE4E3C100FF132E /* UpcomingBillsStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD5B1DE4E3C100FF132E /* UpcomingBillsStateReducer.swift */; };
 		CBB2BFA61DE171F6005429AF /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2BFA51DE171F6005429AF /* RootState.swift */; };
 		CBB2BFA81DE175C7005429AF /* RootStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2BFA71DE175C7005429AF /* RootStateReducer.swift */; };
 		CBB2BFAA1DE1781F005429AF /* PaulState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2BFA91DE1781F005429AF /* PaulState.swift */; };
@@ -52,6 +53,7 @@
 		CB77BD551DE4CD1700FF132E /* UpcomingBill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingBill.swift; sourceTree = "<group>"; };
 		CB77BD571DE4D2ED00FF132E /* APIUpcomingBillResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUpcomingBillResult.swift; sourceTree = "<group>"; };
 		CB77BD591DE4D4D900FF132E /* UpcomingBillsStateActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingBillsStateActions.swift; sourceTree = "<group>"; };
+		CB77BD5B1DE4E3C100FF132E /* UpcomingBillsStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingBillsStateReducer.swift; sourceTree = "<group>"; };
 		CBB2BFA51DE171F6005429AF /* RootState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		CBB2BFA71DE175C7005429AF /* RootStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootStateReducer.swift; sourceTree = "<group>"; };
 		CBB2BFA91DE1781F005429AF /* PaulState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaulState.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				CBB2BFA71DE175C7005429AF /* RootStateReducer.swift */,
 				2A3A8DBD1DE105F4005A8F5F /* LegislatorStateReducer.swift */,
+				CB77BD5B1DE4E3C100FF132E /* UpcomingBillsStateReducer.swift */,
 				CBB2BFAB1DE178A5005429AF /* PaulStateReducer.swift */,
 			);
 			name = Reducer;
@@ -352,6 +355,7 @@
 				CBB2BFAA1DE1781F005429AF /* PaulState.swift in Sources */,
 				2A3A8DB41DE0F841005A8F5F /* APIError.swift in Sources */,
 				CBB2BFAC1DE178A5005429AF /* PaulStateReducer.swift in Sources */,
+				CB77BD5C1DE4E3C100FF132E /* UpcomingBillsStateReducer.swift in Sources */,
 				2A0F1DC41DE1699700A4AB8B /* AmirViewController.swift in Sources */,
 				CBB2BFAE1DE17A51005429AF /* PaulStateActions.swift in Sources */,
 			);

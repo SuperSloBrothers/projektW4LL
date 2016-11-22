@@ -14,9 +14,11 @@ import Alamofire
 struct RootStateReducer: Reducer {
     
     func handleAction(action: Action, state: RootState?) -> RootState {
+        // Delegate to sub-reducers.
         return RootState(
             legislatorState: legislatorStateReducer(action: action, state: state?.legislatorState),
-            paulState: paulStateReducer(action: action, state: state?.paulState)
+            paulState: paulStateReducer(action: action, state: state?.paulState),
+            upcomingBillsState: upcomingBillsStateReducer(action: action, state: state?.upcomingBillsState)
         )
     }
 }
