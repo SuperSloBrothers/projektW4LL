@@ -19,6 +19,8 @@
 		95EA009A22EA471A4197E0CF /* Pods_projektWALL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */; };
 		CB77BD541DE4CCC700FF132E /* UpcomingBillsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD531DE4CCC700FF132E /* UpcomingBillsState.swift */; };
 		CB77BD561DE4CD1700FF132E /* UpcomingBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD551DE4CD1700FF132E /* UpcomingBill.swift */; };
+		CB77BD581DE4D2ED00FF132E /* APIUpcomingBillResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD571DE4D2ED00FF132E /* APIUpcomingBillResult.swift */; };
+		CB77BD5A1DE4D4D900FF132E /* UpcomingBillsStateActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD591DE4D4D900FF132E /* UpcomingBillsStateActions.swift */; };
 		CBB2BFA61DE171F6005429AF /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2BFA51DE171F6005429AF /* RootState.swift */; };
 		CBB2BFA81DE175C7005429AF /* RootStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2BFA71DE175C7005429AF /* RootStateReducer.swift */; };
 		CBB2BFAA1DE1781F005429AF /* PaulState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2BFA91DE1781F005429AF /* PaulState.swift */; };
@@ -48,6 +50,8 @@
 		AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projektWALL.release.xcconfig"; path = "Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL.release.xcconfig"; sourceTree = "<group>"; };
 		CB77BD531DE4CCC700FF132E /* UpcomingBillsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingBillsState.swift; sourceTree = "<group>"; };
 		CB77BD551DE4CD1700FF132E /* UpcomingBill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingBill.swift; sourceTree = "<group>"; };
+		CB77BD571DE4D2ED00FF132E /* APIUpcomingBillResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUpcomingBillResult.swift; sourceTree = "<group>"; };
+		CB77BD591DE4D4D900FF132E /* UpcomingBillsStateActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingBillsStateActions.swift; sourceTree = "<group>"; };
 		CBB2BFA51DE171F6005429AF /* RootState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		CBB2BFA71DE175C7005429AF /* RootStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootStateReducer.swift; sourceTree = "<group>"; };
 		CBB2BFA91DE1781F005429AF /* PaulState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaulState.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			children = (
 				2A3A8DB51DE0FF1B005A8F5F /* RootStateActions.swift */,
 				CBB2BFAF1DE17A5D005429AF /* LegislatorStateActions.swift */,
+				CB77BD591DE4D4D900FF132E /* UpcomingBillsStateActions.swift */,
 				CBB2BFAD1DE17A51005429AF /* PaulStateActions.swift */,
 			);
 			name = Action;
@@ -155,6 +160,7 @@
 				CBF47B011DE0E63700AFA53D /* Legislator.swift */,
 				CB77BD551DE4CD1700FF132E /* UpcomingBill.swift */,
 				2A0F1DBA1DE15C7E00A4AB8B /* APILegislatorResult.swift */,
+				CB77BD571DE4D2ED00FF132E /* APIUpcomingBillResult.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -327,11 +333,13 @@
 			files = (
 				2A0F1DB91DE130A800A4AB8B /* LegislatorRouter.swift in Sources */,
 				2A0F1DC01DE1696600A4AB8B /* UpcomingBillsViewController.swift in Sources */,
+				CB77BD581DE4D2ED00FF132E /* APIUpcomingBillResult.swift in Sources */,
 				2A0F1DBB1DE15C7E00A4AB8B /* APILegislatorResult.swift in Sources */,
 				CBB2BFA81DE175C7005429AF /* RootStateReducer.swift in Sources */,
 				2A3A8DB61DE0FF1B005A8F5F /* RootStateActions.swift in Sources */,
 				2A3A8DBE1DE105F4005A8F5F /* LegislatorStateReducer.swift in Sources */,
 				2A3A8DBC1DE104B3005A8F5F /* LegislatorState.swift in Sources */,
+				CB77BD5A1DE4D4D900FF132E /* UpcomingBillsStateActions.swift in Sources */,
 				CBB2BFB01DE17A5D005429AF /* LegislatorStateActions.swift in Sources */,
 				CB77BD541DE4CCC700FF132E /* UpcomingBillsState.swift in Sources */,
 				DA8A03881DE05640000F392C /* ViewController.swift in Sources */,

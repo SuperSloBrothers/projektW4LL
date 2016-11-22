@@ -13,4 +13,5 @@ import Alamofire
 struct RootState: StateType {
     var legislatorState: LegislatorState
     var paulState: PaulState
+    var upcomingBillsState: UpcomingBillsState
 }
