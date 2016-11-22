@@ -10,11 +10,17 @@ import UIKit
 import ReSwift
 import Alamofire
 
-class UpcomingBillsViewController: UIViewController, StoreSubscriber {
+class UpcomingBillsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, StoreSubscriber {
     
     // MARK: - IVARs
+    var upcomingBills = [UpcomingBill]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     // MARK: - IBOutlets
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: - State Handling
     
@@ -40,15 +46,46 @@ class UpcomingBillsViewController: UIViewController, StoreSubscriber {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Helper Methods
+    struct Storyboard {
+        static let upcomingBillCell = "Upcoming Bill Cell"
+    }
     
     
     // MARK: - IBActions
+    @IBAction func getAllBills(_ sender: UIButton) {
+    }
+    @IBAction func getRecentBills(_ sender: UIButton) {
+    }
+    
     
     // MARK: - Table View Delegate Protocol
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return upcomingBills.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.upcomingBillCell, for: indexPath)
+        let upcomingBill = upcomingBills[indexPath.row]
+        
+        cell.textLabel?.text = "Bill ID: \(upcomingBill.billID)"
+        cell.detailTextLabel?.text = upcomingBill.context
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    
     /*
     // MARK: - Navigation
 

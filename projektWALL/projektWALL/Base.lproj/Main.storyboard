@@ -28,7 +28,7 @@
         <!--Gabe-->
         <scene sceneID="Uhv-fZ-WuX">
             <objects>
-                <viewController id="MVI-gL-bP0" customClass="GabeViewController" customModule="projektWALL" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MVI-gL-bP0" customClass="UpcomingBillsViewController" customModule="projektWALL" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D91-1Q-jH4"/>
                         <viewControllerLayoutGuide type="bottom" id="oac-GU-ueo"/>
@@ -36,13 +36,74 @@
                     <view key="view" contentMode="scaleToFill" id="2gJ-cf-Xc0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lq8-65-15k">
+                                <state key="normal" title="get all bills"/>
+                                <connections>
+                                    <action selector="getAllBills:" destination="MVI-gL-bP0" eventType="touchUpInside" id="Ji4-cT-Sst"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWc-LR-Fvz">
+                                <state key="normal" title="get bills coming up within 1 week"/>
+                                <connections>
+                                    <action selector="getRecentBills:" destination="MVI-gL-bP0" eventType="touchUpInside" id="bQM-KO-O1q"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GJP-TM-FvJ">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Upcoming Bill Cell" textLabel="EKj-h3-ot6" detailTextLabel="A2g-1n-Maq" style="IBUITableViewCellStyleSubtitle" id="s10-ST-mGn">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s10-ST-mGn" id="S1w-2Z-DpL">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EKj-h3-ot6">
+                                                    <frame key="frameInset" minX="15" minY="4" width="34" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A2g-1n-Maq">
+                                                    <frame key="frameInset" minX="15" minY="25" width="44" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="MVI-gL-bP0" id="ejZ-Ag-5Uh"/>
+                                    <outlet property="delegate" destination="MVI-gL-bP0" id="gTY-zQ-O6Z"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eWc-LR-Fvz" firstAttribute="leading" secondItem="lq8-65-15k" secondAttribute="trailing" constant="45" id="3WT-Qg-sgp"/>
+                            <constraint firstItem="lq8-65-15k" firstAttribute="top" secondItem="D91-1Q-jH4" secondAttribute="bottom" constant="14" id="7kt-Jt-7mA"/>
+                            <constraint firstItem="GJP-TM-FvJ" firstAttribute="leading" secondItem="2gJ-cf-Xc0" secondAttribute="leading" id="KZr-uZ-cvn"/>
+                            <constraint firstItem="GJP-TM-FvJ" firstAttribute="top" secondItem="eWc-LR-Fvz" secondAttribute="bottom" constant="55" id="OHA-Jp-n5r"/>
+                            <constraint firstAttribute="trailing" secondItem="GJP-TM-FvJ" secondAttribute="trailing" id="Oa1-Kc-Ilu"/>
+                            <constraint firstItem="lq8-65-15k" firstAttribute="height" secondItem="eWc-LR-Fvz" secondAttribute="height" id="XQj-ZQ-BsE"/>
+                            <constraint firstItem="oac-GU-ueo" firstAttribute="top" secondItem="GJP-TM-FvJ" secondAttribute="bottom" id="etW-SV-09C"/>
+                            <constraint firstItem="lq8-65-15k" firstAttribute="centerY" secondItem="eWc-LR-Fvz" secondAttribute="centerY" id="tVq-co-enf"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="lq8-65-15k" secondAttribute="leading" id="w1v-Sk-Eee"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gabe" id="dFM-cH-Dij"/>
+                    <connections>
+                        <outlet property="tableView" destination="GJP-TM-FvJ" id="2Ag-sI-rea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYT-Z2-otw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-218" y="544"/>
+            <point key="canvasLocation" x="-218.40000000000001" y="542.87856071964018"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="coI-g1-s1S">
@@ -82,7 +143,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iJF-NS-d6j" id="yB9-Qx-2vt">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b48-Yl-29i">
