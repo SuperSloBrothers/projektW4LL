@@ -14,12 +14,7 @@ class UpcomingBillsViewController: UIViewController, UITableViewDelegate, UITabl
     
     // MARK: - IVARs
     
-    var upcomingBills = [UpcomingBill]() {
-        didSet {
-            tableView.reloadData()
-        }
-    }
-    
+    var upcomingBills = [UpcomingBill]()
     let urlString = "https://congress.api.sunlightfoundation.com/upcoming_bills"
     var filterString = ""
     
@@ -48,6 +43,7 @@ class UpcomingBillsViewController: UIViewController, UITableViewDelegate, UITabl
             switch result {
             case .success(let bills):
                 upcomingBills = bills
+                tableView.reloadData()
                 print("success: received new bills")
             case .failure(let error):
                 print("error: \(error)")

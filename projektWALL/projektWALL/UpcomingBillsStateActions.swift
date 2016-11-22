@@ -18,7 +18,7 @@ struct SetUpcomingBills: Action {
 func getUpcomingBills(url: URL = URL(string: "https://congress.api.sunlightfoundation.com/upcoming_bills")!) -> Store<RootState>.ActionCreator {
     return { state, store in
         
-        let request = Alamofire.request(url).responseJSON { response in
+        Alamofire.request(url).responseJSON { response in
             // This block is called asynchronously.
             
             guard let json = response.result.value else {
@@ -31,6 +31,7 @@ func getUpcomingBills(url: URL = URL(string: "https://congress.api.sunlightfound
                 store.dispatch(SetUpcomingBills(newUpcomingBills: Result.failure(apiError)))
                 return
             }
+            
             if let upcomingBills = Mapper<APIUpcomingBillResult>().map(JSONObject: json) {
                 store.dispatch(SetUpcomingBills(newUpcomingBills: Result.success(upcomingBills.results)))
             }
