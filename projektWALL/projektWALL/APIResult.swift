@@ -1,5 +1,5 @@
 //
-//  APIResult.swift
+//  APILegislatorResult.swift
 //  projektWALL
 //
 //  Created by Amir Saifi on 11/19/16.
@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-struct APIResult: Mappable {
+struct APILegislatorResult: Mappable {
     var results: [Legislator]!
     var count: Int!
     

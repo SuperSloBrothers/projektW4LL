@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A0F1DB91DE130A800A4AB8B /* LegislatorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0F1DB81DE130A800A4AB8B /* LegislatorRouter.swift */; };
 		2A0F1DBB1DE15C7E00A4AB8B /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0F1DBA1DE15C7E00A4AB8B /* APIResult.swift */; };
-		2A0F1DC01DE1696600A4AB8B /* GabeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0F1DBF1DE1696600A4AB8B /* GabeViewController.swift */; };
+		2A0F1DC01DE1696600A4AB8B /* UpcomingBillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0F1DBF1DE1696600A4AB8B /* UpcomingBillsViewController.swift */; };
 		2A0F1DC21DE1697100A4AB8B /* PaulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0F1DC11DE1697100A4AB8B /* PaulViewController.swift */; };
 		2A0F1DC41DE1699700A4AB8B /* AmirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0F1DC31DE1699700A4AB8B /* AmirViewController.swift */; };
 		2A3A8DB41DE0F841005A8F5F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DB31DE0F841005A8F5F /* APIError.swift */; };
@@ -17,6 +17,8 @@
 		2A3A8DBC1DE104B3005A8F5F /* LegislatorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DBB1DE104B3005A8F5F /* LegislatorState.swift */; };
 		2A3A8DBE1DE105F4005A8F5F /* LegislatorStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DBD1DE105F4005A8F5F /* LegislatorStateReducer.swift */; };
 		95EA009A22EA471A4197E0CF /* Pods_projektWALL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */; };
+		CB77BD541DE4CCC700FF132E /* UpcomingBillsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD531DE4CCC700FF132E /* UpcomingBillsState.swift */; };
+		CB77BD561DE4CD1700FF132E /* UpcomingBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD551DE4CD1700FF132E /* UpcomingBill.swift */; };
 		CBB2BFA61DE171F6005429AF /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2BFA51DE171F6005429AF /* RootState.swift */; };
 		CBB2BFA81DE175C7005429AF /* RootStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2BFA71DE175C7005429AF /* RootStateReducer.swift */; };
 		CBB2BFAA1DE1781F005429AF /* PaulState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2BFA91DE1781F005429AF /* PaulState.swift */; };
@@ -35,7 +37,7 @@
 /* Begin PBXFileReference section */
 		2A0F1DB81DE130A800A4AB8B /* LegislatorRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegislatorRouter.swift; sourceTree = "<group>"; };
 		2A0F1DBA1DE15C7E00A4AB8B /* APIResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
-		2A0F1DBF1DE1696600A4AB8B /* GabeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GabeViewController.swift; sourceTree = "<group>"; };
+		2A0F1DBF1DE1696600A4AB8B /* UpcomingBillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingBillsViewController.swift; sourceTree = "<group>"; };
 		2A0F1DC11DE1697100A4AB8B /* PaulViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaulViewController.swift; sourceTree = "<group>"; };
 		2A0F1DC31DE1699700A4AB8B /* AmirViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmirViewController.swift; sourceTree = "<group>"; };
 		2A3A8DB31DE0F841005A8F5F /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		2A3A8DBD1DE105F4005A8F5F /* LegislatorStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegislatorStateReducer.swift; sourceTree = "<group>"; };
 		4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projektWALL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projektWALL.release.xcconfig"; path = "Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL.release.xcconfig"; sourceTree = "<group>"; };
+		CB77BD531DE4CCC700FF132E /* UpcomingBillsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingBillsState.swift; sourceTree = "<group>"; };
+		CB77BD551DE4CD1700FF132E /* UpcomingBill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingBill.swift; sourceTree = "<group>"; };
 		CBB2BFA51DE171F6005429AF /* RootState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		CBB2BFA71DE175C7005429AF /* RootStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootStateReducer.swift; sourceTree = "<group>"; };
 		CBB2BFA91DE1781F005429AF /* PaulState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaulState.swift; sourceTree = "<group>"; };
@@ -78,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				DA8A03871DE05640000F392C /* ViewController.swift */,
-				2A0F1DBF1DE1696600A4AB8B /* GabeViewController.swift */,
+				2A0F1DBF1DE1696600A4AB8B /* UpcomingBillsViewController.swift */,
 				2A0F1DC11DE1697100A4AB8B /* PaulViewController.swift */,
 				2A0F1DC31DE1699700A4AB8B /* AmirViewController.swift */,
 			);
@@ -88,9 +92,10 @@
 		2A3A8DAD1DE0F28B005A8F5F /* State */ = {
 			isa = PBXGroup;
 			children = (
+				CBB2BFA51DE171F6005429AF /* RootState.swift */,
 				2A3A8DBB1DE104B3005A8F5F /* LegislatorState.swift */,
 				CBB2BFA91DE1781F005429AF /* PaulState.swift */,
-				CBB2BFA51DE171F6005429AF /* RootState.swift */,
+				CB77BD531DE4CCC700FF132E /* UpcomingBillsState.swift */,
 			);
 			name = State;
 			sourceTree = "<group>";
@@ -98,9 +103,9 @@
 		2A3A8DAE1DE0F298005A8F5F /* Action */ = {
 			isa = PBXGroup;
 			children = (
-				CBB2BFAD1DE17A51005429AF /* PaulStateActions.swift */,
-				CBB2BFAF1DE17A5D005429AF /* LegislatorStateActions.swift */,
 				2A3A8DB51DE0FF1B005A8F5F /* RootStateActions.swift */,
+				CBB2BFAF1DE17A5D005429AF /* LegislatorStateActions.swift */,
+				CBB2BFAD1DE17A51005429AF /* PaulStateActions.swift */,
 			);
 			name = Action;
 			sourceTree = "<group>";
@@ -108,9 +113,9 @@
 		2A3A8DAF1DE0F2CA005A8F5F /* Reducer */ = {
 			isa = PBXGroup;
 			children = (
+				CBB2BFA71DE175C7005429AF /* RootStateReducer.swift */,
 				2A3A8DBD1DE105F4005A8F5F /* LegislatorStateReducer.swift */,
 				CBB2BFAB1DE178A5005429AF /* PaulStateReducer.swift */,
-				CBB2BFA71DE175C7005429AF /* RootStateReducer.swift */,
 			);
 			name = Reducer;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			children = (
 				2A3A8DB31DE0F841005A8F5F /* APIError.swift */,
 				CBF47B011DE0E63700AFA53D /* Legislator.swift */,
+				CB77BD551DE4CD1700FF132E /* UpcomingBill.swift */,
 				2A0F1DBA1DE15C7E00A4AB8B /* APIResult.swift */,
 			);
 			name = Models;
@@ -320,17 +326,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A0F1DB91DE130A800A4AB8B /* LegislatorRouter.swift in Sources */,
-				2A0F1DC01DE1696600A4AB8B /* GabeViewController.swift in Sources */,
+				2A0F1DC01DE1696600A4AB8B /* UpcomingBillsViewController.swift in Sources */,
 				2A0F1DBB1DE15C7E00A4AB8B /* APIResult.swift in Sources */,
 				CBB2BFA81DE175C7005429AF /* RootStateReducer.swift in Sources */,
 				2A3A8DB61DE0FF1B005A8F5F /* RootStateActions.swift in Sources */,
 				2A3A8DBE1DE105F4005A8F5F /* LegislatorStateReducer.swift in Sources */,
 				2A3A8DBC1DE104B3005A8F5F /* LegislatorState.swift in Sources */,
 				CBB2BFB01DE17A5D005429AF /* LegislatorStateActions.swift in Sources */,
+				CB77BD541DE4CCC700FF132E /* UpcomingBillsState.swift in Sources */,
 				DA8A03881DE05640000F392C /* ViewController.swift in Sources */,
 				CBF47B021DE0E63700AFA53D /* Legislator.swift in Sources */,
 				DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */,
 				DA8A03861DE05640000F392C /* AppDelegate.swift in Sources */,
+				CB77BD561DE4CD1700FF132E /* UpcomingBill.swift in Sources */,
 				2A0F1DC21DE1697100A4AB8B /* PaulViewController.swift in Sources */,
 				CBB2BFA61DE171F6005429AF /* RootState.swift in Sources */,
 				CBB2BFAA1DE1781F005429AF /* PaulState.swift in Sources */,

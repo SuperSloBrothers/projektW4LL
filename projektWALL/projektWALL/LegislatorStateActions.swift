@@ -29,7 +29,7 @@ func getLegislators() -> Store<RootState>.ActionCreator {
                 store.dispatch(SetLegislators(legislators: Result.failure(apiError!)))
                 return
             }
-            if let legislators = Mapper<APIResult>().map(JSONObject: JSON) {
+            if let legislators = Mapper<APILegislatorResult>().map(JSONObject: JSON) {
                 store.dispatch(SetLegislators(legislators: Result.success(legislators.results)))
             }
             

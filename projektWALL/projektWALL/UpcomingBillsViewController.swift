@@ -1,5 +1,5 @@
 //
-//  GabeViewController.swift
+//  UpcomingBillsViewController.swift
 //  projektWALL
 //
 //  Created by Amir Saifi on 11/19/16.
@@ -10,7 +10,7 @@ import UIKit
 import ReSwift
 import Alamofire
 
-class GabeViewController: UIViewController, StoreSubscriber {
+class UpcomingBillsViewController: UIViewController, StoreSubscriber {
     
     // MARK: - IVARs
     
