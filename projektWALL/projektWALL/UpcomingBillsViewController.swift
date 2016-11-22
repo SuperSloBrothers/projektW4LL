@@ -13,51 +13,71 @@ import Alamofire
 class UpcomingBillsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, StoreSubscriber {
     
     // MARK: - IVARs
+    
     var upcomingBills = [UpcomingBill]() {
         didSet {
             tableView.reloadData()
         }
     }
     
+    let urlString = "https://congress.api.sunlightfoundation.com/upcoming_bills"
+    var filterString = ""
+    
+    
     // MARK: - IBOutlets
+    
     @IBOutlet weak var tableView: UITableView!
+    
     
     // MARK: - State Handling
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         store.subscribe(self)
     }
     
-    
     override func viewWillDisappear(_ animated: Bool) {
         store.unsubscribe(self)
     }
     
-    
     func newState(state: RootState) {
-        
+        if let result = state.upcomingBillsState.upcomingBills {
+            switch result {
+            case .success(let bills):
+                upcomingBills = bills
+                print("success: received new bills")
+            case .failure(let error):
+                print("error: \(error)")
+            }
+        } else {
+            print("retrieving data or default state")
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    
     // MARK: - Helper Methods
+    
     struct Storyboard {
         static let upcomingBillCell = "Upcoming Bill Cell"
     }
     
     
     // MARK: - IBActions
+    
     @IBAction func getAllBills(_ sender: UIButton) {
+        store.dispatch(getUpcomingBills())
     }
-    @IBAction func getRecentBills(_ sender: UIButton) {
+    
+    @IBAction func houseBillsOnly(_ sender: UIButton) {
+        filterString = "?chamber=house"
+        store.dispatch(getUpcomingBills(url: URL(string: urlString + filterString)!))
     }
     
     
@@ -71,8 +91,8 @@ class UpcomingBillsViewController: UIViewController, UITableViewDelegate, UITabl
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.upcomingBillCell, for: indexPath)
         let upcomingBill = upcomingBills[indexPath.row]
         
-        cell.textLabel?.text = "Bill ID: \(upcomingBill.billID)"
-        cell.detailTextLabel?.text = upcomingBill.context
+        cell.textLabel?.text = "Bill ID: \(upcomingBill.billID!), Chamber: \(upcomingBill.chamber!)"
+        cell.detailTextLabel?.text = "Scheduled on \(upcomingBill.legislativeDay!)"
         
         return cell
     }

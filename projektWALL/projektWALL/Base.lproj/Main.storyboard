@@ -44,9 +44,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWc-LR-Fvz">
-                                <state key="normal" title="get bills coming up within 1 week"/>
+                                <state key="normal" title="house bills only"/>
                                 <connections>
-                                    <action selector="getRecentBills:" destination="MVI-gL-bP0" eventType="touchUpInside" id="bQM-KO-O1q"/>
+                                    <action selector="houseBillsOnly:" destination="MVI-gL-bP0" eventType="touchUpInside" id="jID-9u-5hD"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GJP-TM-FvJ">
@@ -85,11 +85,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eWc-LR-Fvz" firstAttribute="leading" secondItem="lq8-65-15k" secondAttribute="trailing" constant="45" id="3WT-Qg-sgp"/>
                             <constraint firstItem="lq8-65-15k" firstAttribute="top" secondItem="D91-1Q-jH4" secondAttribute="bottom" constant="14" id="7kt-Jt-7mA"/>
                             <constraint firstItem="GJP-TM-FvJ" firstAttribute="leading" secondItem="2gJ-cf-Xc0" secondAttribute="leading" id="KZr-uZ-cvn"/>
                             <constraint firstItem="GJP-TM-FvJ" firstAttribute="top" secondItem="eWc-LR-Fvz" secondAttribute="bottom" constant="55" id="OHA-Jp-n5r"/>
                             <constraint firstAttribute="trailing" secondItem="GJP-TM-FvJ" secondAttribute="trailing" id="Oa1-Kc-Ilu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eWc-LR-Fvz" secondAttribute="trailing" id="Tbu-Is-zTO"/>
                             <constraint firstItem="lq8-65-15k" firstAttribute="height" secondItem="eWc-LR-Fvz" secondAttribute="height" id="XQj-ZQ-BsE"/>
                             <constraint firstItem="oac-GU-ueo" firstAttribute="top" secondItem="GJP-TM-FvJ" secondAttribute="bottom" id="etW-SV-09C"/>
                             <constraint firstItem="lq8-65-15k" firstAttribute="centerY" secondItem="eWc-LR-Fvz" secondAttribute="centerY" id="tVq-co-enf"/>
