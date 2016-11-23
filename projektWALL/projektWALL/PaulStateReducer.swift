@@ -11,7 +11,10 @@ import ReSwift
 import Alamofire
 
 func paulStateReducer(action: Action, state: PaulState?) -> PaulState {
-    var state = state ?? initialState()
+    let state = state ?? initialState()
+    
+    // switch statement for reducing actions into the state goes here
+    // see LegislatorStateReducer.swift
     
     return state
 }

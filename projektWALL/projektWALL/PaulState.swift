@@ -10,7 +10,7 @@ import Foundation
 import ReSwift
 import Alamofire
 
-struct PaulState: StateType {
+struct PaulState {
     var name: String?
     var things: [String]!
 }

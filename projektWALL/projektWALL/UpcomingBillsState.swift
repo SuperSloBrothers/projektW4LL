@@ -10,6 +10,6 @@ import Foundation
 import ReSwift
 import Alamofire
 
-struct UpcomingBillsState: StateType {
+struct UpcomingBillsState {
     var upcomingBills: Result<[UpcomingBill]>?
 }

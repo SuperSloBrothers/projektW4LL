@@ -10,6 +10,6 @@ import Foundation
 import ReSwift
 import Alamofire
 
-struct LegislatorState: StateType {
+struct LegislatorState {
     var legislators: Result<[Legislator]>?
 }

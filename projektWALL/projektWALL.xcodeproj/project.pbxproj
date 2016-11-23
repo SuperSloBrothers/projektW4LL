@@ -16,6 +16,9 @@
 		2A3A8DB61DE0FF1B005A8F5F /* RootStateActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DB51DE0FF1B005A8F5F /* RootStateActions.swift */; };
 		2A3A8DBC1DE104B3005A8F5F /* LegislatorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DBB1DE104B3005A8F5F /* LegislatorState.swift */; };
 		2A3A8DBE1DE105F4005A8F5F /* LegislatorStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A8DBD1DE105F4005A8F5F /* LegislatorStateReducer.swift */; };
+		2A6F67BA1DE5251E00092630 /* AmirState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6F67B91DE5251E00092630 /* AmirState.swift */; };
+		2A6F67BC1DE525E500092630 /* AmirStateActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6F67BB1DE525E500092630 /* AmirStateActions.swift */; };
+		2A6F67BE1DE5268800092630 /* AmirStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6F67BD1DE5268800092630 /* AmirStateReducer.swift */; };
 		95EA009A22EA471A4197E0CF /* Pods_projektWALL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */; };
 		CB77BD541DE4CCC700FF132E /* UpcomingBillsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD531DE4CCC700FF132E /* UpcomingBillsState.swift */; };
 		CB77BD561DE4CD1700FF132E /* UpcomingBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77BD551DE4CD1700FF132E /* UpcomingBill.swift */; };
@@ -47,6 +50,9 @@
 		2A3A8DB51DE0FF1B005A8F5F /* RootStateActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootStateActions.swift; sourceTree = "<group>"; };
 		2A3A8DBB1DE104B3005A8F5F /* LegislatorState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegislatorState.swift; sourceTree = "<group>"; };
 		2A3A8DBD1DE105F4005A8F5F /* LegislatorStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegislatorStateReducer.swift; sourceTree = "<group>"; };
+		2A6F67B91DE5251E00092630 /* AmirState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmirState.swift; sourceTree = "<group>"; };
+		2A6F67BB1DE525E500092630 /* AmirStateActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmirStateActions.swift; sourceTree = "<group>"; };
+		2A6F67BD1DE5268800092630 /* AmirStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmirStateReducer.swift; sourceTree = "<group>"; };
 		4B05633A46F3C9A452AC59C9 /* Pods_projektWALL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projektWALL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE93BAD5172468C0F4497160 /* Pods-projektWALL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projektWALL.release.xcconfig"; path = "Pods/Target Support Files/Pods-projektWALL/Pods-projektWALL.release.xcconfig"; sourceTree = "<group>"; };
 		CB77BD531DE4CCC700FF132E /* UpcomingBillsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingBillsState.swift; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 			children = (
 				CBB2BFA51DE171F6005429AF /* RootState.swift */,
 				2A3A8DBB1DE104B3005A8F5F /* LegislatorState.swift */,
+				2A6F67B91DE5251E00092630 /* AmirState.swift */,
 				CBB2BFA91DE1781F005429AF /* PaulState.swift */,
 				CB77BD531DE4CCC700FF132E /* UpcomingBillsState.swift */,
 			);
@@ -111,6 +118,7 @@
 			children = (
 				2A3A8DB51DE0FF1B005A8F5F /* RootStateActions.swift */,
 				CBB2BFAF1DE17A5D005429AF /* LegislatorStateActions.swift */,
+				2A6F67BB1DE525E500092630 /* AmirStateActions.swift */,
 				CB77BD591DE4D4D900FF132E /* UpcomingBillsStateActions.swift */,
 				CBB2BFAD1DE17A51005429AF /* PaulStateActions.swift */,
 			);
@@ -122,6 +130,7 @@
 			children = (
 				CBB2BFA71DE175C7005429AF /* RootStateReducer.swift */,
 				2A3A8DBD1DE105F4005A8F5F /* LegislatorStateReducer.swift */,
+				2A6F67BD1DE5268800092630 /* AmirStateReducer.swift */,
 				CB77BD5B1DE4E3C100FF132E /* UpcomingBillsStateReducer.swift */,
 				CBB2BFAB1DE178A5005429AF /* PaulStateReducer.swift */,
 			);
@@ -342,14 +351,17 @@
 				2A3A8DB61DE0FF1B005A8F5F /* RootStateActions.swift in Sources */,
 				2A3A8DBE1DE105F4005A8F5F /* LegislatorStateReducer.swift in Sources */,
 				2A3A8DBC1DE104B3005A8F5F /* LegislatorState.swift in Sources */,
+				2A6F67BC1DE525E500092630 /* AmirStateActions.swift in Sources */,
 				CB77BD5A1DE4D4D900FF132E /* UpcomingBillsStateActions.swift in Sources */,
 				CBB2BFB01DE17A5D005429AF /* LegislatorStateActions.swift in Sources */,
 				CB77BD541DE4CCC700FF132E /* UpcomingBillsState.swift in Sources */,
 				DA8A03881DE05640000F392C /* ViewController.swift in Sources */,
+				2A6F67BE1DE5268800092630 /* AmirStateReducer.swift in Sources */,
 				CBF47B021DE0E63700AFA53D /* Legislator.swift in Sources */,
 				DA103B6A1DE059C400CDFDB8 /* APIRouter.swift in Sources */,
 				DA8A03861DE05640000F392C /* AppDelegate.swift in Sources */,
 				CB77BD561DE4CD1700FF132E /* UpcomingBill.swift in Sources */,
+				2A6F67BA1DE5251E00092630 /* AmirState.swift in Sources */,
 				2A0F1DC21DE1697100A4AB8B /* PaulViewController.swift in Sources */,
 				CBB2BFA61DE171F6005429AF /* RootState.swift in Sources */,
 				CBB2BFAA1DE1781F005429AF /* PaulState.swift in Sources */,
