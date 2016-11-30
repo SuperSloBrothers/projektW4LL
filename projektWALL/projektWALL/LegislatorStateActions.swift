@@ -18,7 +18,7 @@ struct SetLegislators: Action {
 func getLegislators() -> Store<RootState>.ActionCreator {
     return { state, store in
         
-        let request = Alamofire.request("https://congress.api.sunlightfoundation.com/legislators").responseJSON { response in
+        let request = Alamofire.request(LegislatorRouter.Read(nil, nil) /*"https://congress.api.sunlightfoundation.com/legislators"*/).responseJSON { response in
             guard let JSON = response.result.value else {
                 let apiError = APIError(status: response.response?.statusCode ?? 400, type: "invalid", message: response.result.error?.localizedDescription ?? "could not load legislators")
                 store.dispatch(SetLegislators(legislators: Result.failure(apiError)))
